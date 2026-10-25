@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Decreto N.º 19 del Universo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap">
+<style>
+:root{--night:#050822;--paper:#0c1440;--gold:#e9d9a6;--blue:#7fa8ff;--ink:#f1ecdc;--mute:#a9b4dc;
+  color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;font-size:1.2rem;line-height:1.45;
+  background:var(--night) radial-gradient(1.2px 1.2px at 12% 18%,#fff 50%,transparent),radial-gradient(1px 1px at 78% 9%,#fff 50%,transparent),radial-gradient(1.4px 1.4px at 90% 42%,#cfe0ff 50%,transparent),radial-gradient(1px 1px at 6% 62%,#fff 50%,transparent),radial-gradient(1.2px 1.2px at 64% 78%,#cfe0ff 50%,transparent),radial-gradient(1px 1px at 30% 92%,#fff 50%,transparent),radial-gradient(110% 60% at 85% 0%,#1d2f7a,transparent 60%),radial-gradient(90% 50% at 5% 100%,#2a1c63,transparent 65%);
+  background-attachment:fixed}
+.moon{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:16px;width:46px;height:46px;border-radius:50%;box-shadow:inset -14px 4px 0 0 #f6f1de;filter:drop-shadow(0 0 12px rgba(190,210,255,.55));transform:rotate(-20deg)}
+main{max-width:600px;margin:0 auto;padding:34px 16px 40px}
+.doc{position:relative;padding:34px 22px 28px;background:linear-gradient(180deg,rgba(14,22,70,.94),rgba(9,14,48,.96));border:1px solid rgba(233,217,166,.55);border-radius:6px;
+  box-shadow:0 0 0 6px rgba(233,217,166,.07),0 0 0 7px rgba(233,217,166,.3),0 24px 60px rgba(0,0,0,.55)}
+.num{margin:0;text-align:center;color:var(--gold);font-style:italic;font-size:1.1rem}
+h1{margin:6px 0 4px;text-align:center;font-weight:600;font-style:italic;font-size:clamp(2.2rem,10vw,3.2rem);line-height:1.02;color:var(--ink)}
+.for{margin:14px 0 4px;text-align:center;color:var(--mute);font-style:italic}
+.name{margin:0 0 20px;text-align:center;font-weight:600;font-size:1.65rem;line-height:1.15;color:var(--gold)}
+.rule{height:1px;margin:18px 0;border:0;background:linear-gradient(90deg,transparent,rgba(233,217,166,.6),transparent)}
+h2{margin:0 0 8px;font-size:1.15rem;font-weight:600;font-style:italic;color:var(--blue)}
+.cons p{margin:0 0 8px;padding-left:14px;border-left:1px solid rgba(127,168,255,.45)}
+.art{margin:0 0 14px}
+.art b{display:block;font-style:italic;font-weight:600;color:var(--gold);font-size:1.05rem}
+.art span{display:block}
+.fin{margin:4px 0 0;font-style:italic;color:var(--mute)}
+.sign{margin:22px 0 0;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.sign p{margin:0;font-style:italic;color:var(--mute);font-size:1.05rem}
+.sign strong{display:block;font-size:1.5rem;font-weight:600;color:var(--ink)}
+.seal{flex:none;width:92px;height:92px;border-radius:50%;display:grid;place-items:center;text-align:center;border:2px dashed rgba(233,217,166,.35);color:rgba(233,217,166,.45);font-style:italic;font-size:.95rem;line-height:1.1;transition:all .3s}
+.seal.on{border:3px solid #f3e6b8;color:#3b2f06;background:radial-gradient(circle at 35% 30%,#fbf0c6,#d9bf6a 70%,#b99a43);box-shadow:0 0 0 4px rgba(233,217,166,.25),0 8px 24px rgba(233,217,166,.35);font-weight:600;animation:stamp .6s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes stamp{from{opacity:0;transform:scale(2.4) rotate(-24deg)}to{opacity:1;transform:scale(1) rotate(-10deg)}}
+.accept{all:unset;box-sizing:border-box;display:block;width:100%;margin-top:26px;text-align:center;cursor:pointer;padding:15px 16px;border-radius:99px;font-size:1.3rem;font-weight:600;font-style:italic;color:#08102e;
+  background:linear-gradient(135deg,#f3e6b8,#d9bf6a);box-shadow:0 8px 26px rgba(233,217,166,.3)}
+.accept:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.accept[disabled]{cursor:default;background:rgba(127,168,255,.15);color:var(--ink);box-shadow:none}
+.done{margin:14px 0 0;text-align:center;font-style:italic;font-size:1.25rem;color:var(--gold);min-height:1.5em}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="moon" aria-hidden="true"></div>
+<main>
+<article class="doc">
+  <p class="num">Decreto N.º 19</p>
+  <h1>Decreto del Universo</h1>
+  <p class="for">en favor de la cumpleañera</p>
+  <p class="name">Lesly Chanel Puntiel Mejía</p>
+
+  <hr class="rule">
+  <section class="cons">
+    <h2>Considerando</h2>
+    <p>Que hoy, 25 de octubre de 2026, cumple 19 años una de las personas más inteligentes, divertidas y dulces que habitan este planeta.</p>
+    <p>Que sus ojos, sus lunares y su alma dulce merecen reconocimiento oficial.</p>
+    <p>Que la música suena mejor cuando ella la escucha.</p>
+  </section>
+
+  <hr class="rule">
+  <section>
+    <h2>El Universo decreta</h2>
+    <p class="art"><b>Artículo 1</b><span>Hoy el cielo se pone de gala: las estrellas brillan un poco más fuerte en honor a la cumpleañera.</span></p>
+    <p class="art"><b>Artículo 2</b><span>Todo lo que haga hoy queda declarado perfecto, incluso quedarse en pijama todo el día.</span></p>
+    <p class="art"><b>Artículo 3</b><span>Toda canción que suene hoy, en cualquier lugar del mundo, queda oficialmente dedicada a ella.</span></p>
+    <p class="art"><b>Artículo 4</b><span>Cada vez que sonría, se enciende una estrella nueva en el cielo.</span></p>
+    <p class="art"><b>Artículo 5</b><span>Queda autorizada a tomarse el día con calma: comer rico, descansar y no tener prisa por nada.</span></p>
+    <p class="art"><b>Artículo 6</b><span>Tiene derecho a pedir un mimo o un mensaje lindo cuando lo quiera, y nadie podrá negárselo.</span></p>
+    <p class="art"><b>Artículo 7</b><span>Hoy se alinean todos los planetas a su favor: la suerte, el cariño y las cosas bonitas la encuentran donde esté.</span></p>
+    <p class="fin">Disposición final: podrá hacerlo valer cuantas veces quiera, hoy y todos los 25 de octubre que le quedan por vivir.</p>
+  </section>
+
+  <hr class="rule">
+  <div class="sign">
+    <p>Dado en el cielo, a 25 de octubre de 2026<strong>El Universo</strong>con la Luna como testigo</p>
+    <div class="seal" id="seal" aria-hidden="true">sello<br>del cielo</div>
+  </div>
+
+  <button class="accept" id="btn">Aceptar y sellar el decreto</button>
+  <p class="done" id="done" aria-live="polite"></p>
+</article>
+</main>
+<script>
+document.getElementById('btn').addEventListener('click',function(){
+  var s=document.getElementById('seal');s.classList.add('on');s.innerHTML='en vigor';
+  this.disabled=true;this.textContent='Decreto en vigor';
+  document.getElementById('done').textContent='Hoy todo gira en torno a ti 🤍';
+});
+</script>
+</body>
+</html>
